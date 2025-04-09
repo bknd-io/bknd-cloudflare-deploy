@@ -1,6 +1,6 @@
 # bknd: Quick deploy to Cloudflare Workers
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/bknd/bknd-cloudflare-deploy)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/bknd-io/bknd-cloudflare-deploy)
 
 https://github.com/user-attachments/assets/7ccef128-cfaf-49b8-9800-fd88e7177075
 
