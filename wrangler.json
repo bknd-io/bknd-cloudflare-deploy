@@ -1,0 +1,27 @@
+{
+   "$schema": "node_modules/wrangler/config-schema.json",
+   "name": "bknd-cloudflare-deploy",
+   "main": "src/index.ts",
+   "compatibility_date": "2025-02-04",
+   "compatibility_flags": ["nodejs_compat"],
+   "workers_dev": true,
+   "minify": true,
+   "assets": {
+      "directory": "node_modules/bknd/dist/static"
+   },
+   "observability": {
+      "enabled": true
+   },
+   "d1_databases": [
+      {
+         "binding": "DB",
+         "database_name": "db"
+      }
+   ],
+   "r2_buckets": [
+      {
+         "binding": "BUCKET",
+         "bucket_name": "bckt"
+      }
+   ]
+}
