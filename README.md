@@ -2,7 +2,7 @@
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/bknd/bknd-cloudflare-deploy)
 
-<video src="https://cdn.bknd.io/misc/v0.11_cloudflare_demo_o.mp4" alt="bknd cloudflare demo" />
+https://github.com/user-attachments/assets/7ccef128-cfaf-49b8-9800-fd88e7177075
 
 A minimal cloudflare workers boilerplate to deploy a fully functional instance to Cloudflare Workers, using Cloudflare-only infrastructure:
 
