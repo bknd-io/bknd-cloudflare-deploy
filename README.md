@@ -1,16 +1,26 @@
-# bknd starter: Cloudflare Workers
-A minimal Node.js project with bknd integration.
+# bknd: Quick deploy to Cloudflare Workers
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/bknd/bknd-cloudflare-deploy)
+
+[![bknd cloudflare demo](https://cdn.bknd.io/misc/v0.11_cloudflare_demo_o.mp4)
+
+A minimal cloudflare workers boilerplate to deploy a fully functional instance to Cloudflare Workers, using Cloudflare-only infrastructure:
+
+-  Worker as compute
+-  [D1](https://developers.cloudflare.com/d1/) as the database
+-  [R2](https://developers.cloudflare.com/r2/) bucket as storage
+-  [`waitUntil`](https://developers.cloudflare.com/workers/runtime-apis/context/#waituntil) for async event handlers
 
 ## Project Structure
 
-Inside of your Node.js project, you'll see the following folders and files:
+Inside of your bknd project, you'll see the following folders and files:
 
 ```text
 /
 ├── src/
 │   └── index.ts
 ├── package.json
-└── wrangler.json
+└── wrangler.jsonc
 ```
 
 To update `bknd` config, check `src/index.ts`.
@@ -20,13 +30,16 @@ To update `bknd` config, check `src/index.ts`.
 All commands are run from the root of the project, from a terminal:
 
 | Command           | Action                                                   |
-|:------------------|:---------------------------------------------------------|
+| :---------------- | :------------------------------------------------------- |
 | `npm install`     | Installs dependencies                                    |
 | `npm run dev`     | Starts local dev server with `watch` at `localhost:8787` |
 | `npm run typegen` | Generates wrangler types                                 |
 
-## Before you deploy
-If you're using a D1 database, make sure to create a database in your cloudflare account and replace the `database_id` accordingly in `wrangler.json`.
+## Deployment
+
+You can either use the `Deploy to Cloudflare` button above (automatically configured), or deploy manually.
+
+If deploying manually, make sure the `database_id` in the `wrangler.jsonc` configuration is correctly pointing to your database. If you haven't created one yet, run the following command:
 
 ```sh
 npx wrangler d1 create my-database
