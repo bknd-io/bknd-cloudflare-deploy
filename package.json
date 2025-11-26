@@ -5,14 +5,15 @@
    "scripts": {
       "deploy": "wrangler deploy",
       "dev": "wrangler dev",
-      "typegen": "wrangler types"
+      "typegen": "wrangler types",
+      "postinstall": "wrangler types"
    },
    "dependencies": {
-      "bknd": "0.18.0"
+      "bknd": "0.19.0"
    },
    "devDependencies": {
-      "@cloudflare/workers-types": "^4.20251011.0",
+      "@cloudflare/workers-types": "^4.20251126.0",
       "typescript": "^5.9.3",
-      "wrangler": "^4.42.2"
+      "wrangler": "^4.51.0"
    }
 }
