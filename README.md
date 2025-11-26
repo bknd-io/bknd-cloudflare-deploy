@@ -34,12 +34,11 @@ All commands are run from the root of the project, from a terminal:
 | `npm install`     | Installs dependencies                                    |
 | `npm run dev`     | Starts local dev server with `watch` at `localhost:8787` |
 | `npm run typegen` | Generates wrangler types                                 |
+| `npm run deploy`  | Deploys the worker to Cloudflare                         |
 
 ## Deployment
 
-You can either use the `Deploy to Cloudflare` button above (automatically configured), or deploy manually.
-
-If deploying manually, make sure the `database_id` in the `wrangler.jsonc` configuration is correctly pointing to your database. If you haven't created one yet, run the following command:
+You can either use the `Deploy to Cloudflare` button above (automatically configured), or deploy manually using `npm run deploy`.
 
 ```sh
 npx wrangler d1 create my-database
